@@ -1,0 +1,27 @@
+:root{--bg:#F6F5F2;--fg:#2D2823;--muted:#6B655E;--card:#FFFFFE;--line:#E3E1DC;--accent:#4F6B4F;--rose:#B8483A;
+--font:'Nunito',ui-rounded,system-ui,-apple-system,'Segoe UI',sans-serif}
+@media (prefers-color-scheme:dark){:root{--bg:#1B1A19;--fg:#F1EEE9;--muted:#B3ADA5;--card:#252422;--line:#3A3835;--accent:#9CC29C;--rose:#E58A7C}}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--fg);font-family:var(--font);font-size:17px;line-height:1.65}
+a{color:var(--accent)}
+.topbar{display:flex;align-items:center;justify-content:space-between;gap:16px;flex-wrap:wrap;max-width:860px;margin:0 auto;padding:18px 20px}
+.brand{display:flex;align-items:center;gap:10px;font-weight:800;font-size:19px;color:var(--fg);text-decoration:none}
+.brand img{width:40px;height:40px;border-radius:10px}
+.nav{display:flex;gap:16px;flex-wrap:wrap;font-weight:700;font-size:15px}
+.nav a{text-decoration:none;color:var(--muted)}
+.nav a:hover{color:var(--fg)}
+.wrap{max-width:760px;margin:0 auto;padding:8px 20px 64px}
+h1{font-size:34px;line-height:1.2;margin:8px 0 4px;text-wrap:balance}
+h2{font-size:21px;margin:34px 0 6px}
+h3{font-size:17px;margin:22px 0 4px}
+.updated{color:var(--muted);font-size:14px;margin-bottom:22px}
+.callout{background:var(--card);border:1px solid var(--line);border-radius:16px;padding:16px 18px;margin:18px 0}
+.lang{display:inline-block;margin:44px 0 0;padding-top:28px;border-top:1px solid var(--line);width:100%}
+.hero{display:grid;grid-template-columns:auto 1fr;gap:28px;align-items:center;margin:28px 0}
+.hero img{width:150px;height:150px;border-radius:34px;box-shadow:0 8px 30px rgba(0,0,0,.08)}
+.lead{font-size:19px;color:var(--muted)}
+.points{display:grid;grid-template-columns:repeat(auto-fit,minmax(210px,1fr));gap:14px;margin:26px 0}
+.points div{background:var(--card);border:1px solid var(--line);border-radius:16px;padding:16px}
+.points b{display:block;margin-bottom:4px}
+footer{max-width:760px;margin:0 auto;padding:0 20px 40px;color:var(--muted);font-size:14px}
+@media (max-width:560px){.hero{grid-template-columns:1fr}.hero img{width:110px;height:110px;border-radius:26px}h1{font-size:28px}}
