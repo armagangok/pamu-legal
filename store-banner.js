@@ -16,7 +16,7 @@
   if (!(isAndroid || (isIOS && !isIOSSafari))) return;
   try { if (localStorage.getItem('pamuBannerClosed')) return; } catch (e) {}
 
-  var tr = /^tr/i.test(navigator.language || '');
+  var tr = document.documentElement.getAttribute('data-lang') === 'tr';
   var bar = document.createElement('div');
   bar.className = 'app-banner';
   bar.innerHTML =

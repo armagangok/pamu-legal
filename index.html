@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-title-tr="Pamu: Regl ve Döngü Takibi">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -10,14 +10,16 @@
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;700;800&display=swap" />
   <meta name="apple-itunes-app" content="app-id=6824039129" />
-  <link rel="stylesheet" href="style.css?v=3" />
+  <script>(function(){var l=null;try{l=new URLSearchParams(location.search).get('lang')||localStorage.getItem('pamuLang')}catch(e){}if(location.hash==='#tr')l='tr';if(l!=='tr'&&l!=='en')l=/^tr/i.test(navigator.language||'')?'tr':'en';var h=document.documentElement;h.setAttribute('data-lang',l);h.lang=l})();</script>
+  <link rel="stylesheet" href="style.css?v=4" />
 </head>
 <body>
   <header class="topbar">
     <a class="brand" href="index.html"><img src="app-icon.png" alt="" /><span>Pamu</span></a>
-    <nav class="nav"><a href="privacy.html">Privacy · Gizlilik</a><a href="terms.html">Terms · Koşullar</a><a href="support.html">Support · Destek</a></nav>
+    <nav class="nav"><a href="privacy.html"><span class="i18n-en">Privacy</span><span class="i18n-tr">Gizlilik</span></a><a href="terms.html"><span class="i18n-en">Terms</span><span class="i18n-tr">Koşullar</span></a><a href="support.html"><span class="i18n-en">Support</span><span class="i18n-tr">Destek</span></a><button class="lang-switch i18n-en" type="button" data-set-lang="tr" lang="tr">Türkçe</button><button class="lang-switch i18n-tr" type="button" data-set-lang="en" lang="en">English</button></nav>
   </header>
   <main class="wrap">
+    <div class="i18n-en" lang="en">
     <section class="hero">
       <img src="app-icon.png" alt="Pamu, a bunny wrapped in a blanket holding a hot water bottle" />
       <div>
@@ -32,15 +34,27 @@
       <div><b>Gentle by design</b>No guilt about missed days. Pamu never pretends to be a doctor.</div>
     </div>
     <p>Read our <a href="privacy.html">Privacy Policy</a> and <a href="terms.html">Terms of Use</a>, or <a href="support.html">get support</a>.</p>
+    </div>
 
-    <div class="lang" lang="tr">
-      <h2>Pamu: Regl ve Döngü Takibi</h2>
-      <p>Regl ve döngün için sakin ve özel bir yol arkadaşı. Regl gününü, akışını, belirtilerini ve ruh halini birkaç dokunuşla kaydet; yumuşacık bir tavşan sana eşlik etsin. Verilerin yalnızca telefonunda, şifreli olarak kalır. Hesap, reklam, analitik ve takip yok.</p>
-      <div class="stores"><a data-store="apple" href="https://apps.apple.com/app/id6824039129"><img src="app-store-badge.svg" alt="Download on the App Store" width="156" height="52" style="height:52px;width:auto;border-radius:0;box-shadow:none" /></a><a data-store="play" href="https://play.google.com/store/apps/details?id=com.appsweat.periodTracker"><img src="google-play-badge.png" alt="Get it on Google Play" width="175" height="52" style="height:52px;width:auto;border-radius:0;box-shadow:none" /></a></div>
-      <p><a href="privacy.html#tr">Gizlilik Politikası</a> · <a href="terms.html#tr">Kullanım Koşulları</a> · <a href="support.html#tr">Destek</a></p>
+    <div class="lang i18n-tr" id="tr" lang="tr">
+    <section class="hero">
+      <img src="app-icon.png" alt="Pamu, battaniyeye sarılmış, elinde sıcak su torbası tutan bir tavşan" />
+      <div>
+        <h1>Pamu: Regl ve Döngü Takibi</h1>
+        <p class="lead">Regl ve döngün için sakin ve özel bir yol arkadaşı. Regl gününü, akışını, belirtilerini ve ruh halini birkaç dokunuşla kaydet; yumuşacık bir tavşan sana eşlik etsin.</p>
+        <div class="stores"><a data-store="apple" href="https://apps.apple.com/app/id6824039129"><img src="app-store-badge.svg" alt="Download on the App Store" width="156" height="52" style="height:52px;width:auto;border-radius:0;box-shadow:none" /></a><a data-store="play" href="https://play.google.com/store/apps/details?id=com.appsweat.periodTracker"><img src="google-play-badge.png" alt="Get it on Google Play" width="175" height="52" style="height:52px;width:auto;border-radius:0;box-shadow:none" /></a></div>
+      </div>
+    </section>
+    <div class="points">
+      <div><b>Telefonunda kalır</b>Kayıtların yalnızca cihazında, şifreli olarak saklanır.</div>
+      <div><b>Hesap yok, reklam yok</b>Üyelik yok, reklam yok, analitik yok, takip yok.</div>
+      <div><b>Nazik bir tasarım</b>Kaçırdığın günler için suçluluk yok. Pamu asla doktormuş gibi davranmaz.</div>
+    </div>
+    <p><a href="privacy.html">Gizlilik Politikası</a> ve <a href="terms.html">Kullanım Koşulları</a>'nı okuyabilir ya da <a href="support.html">destek alabilirsin</a>.</p>
     </div>
   </main>
   <footer>© 2026 AppSweat · <a href="mailto:appsweatmobile@gmail.com">appsweatmobile@gmail.com</a></footer>
-  <script src="store-banner.js?v=3"></script>
+  <script src="store-banner.js?v=4"></script>
+  <script src="lang.js?v=4"></script>
 </body>
 </html>

@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-title-tr="Destek · Pamu">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -10,14 +10,16 @@
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;700;800&display=swap" />
   <meta name="apple-itunes-app" content="app-id=6824039129" />
-  <link rel="stylesheet" href="style.css?v=3" />
+  <script>(function(){var l=null;try{l=new URLSearchParams(location.search).get('lang')||localStorage.getItem('pamuLang')}catch(e){}if(location.hash==='#tr')l='tr';if(l!=='tr'&&l!=='en')l=/^tr/i.test(navigator.language||'')?'tr':'en';var h=document.documentElement;h.setAttribute('data-lang',l);h.lang=l})();</script>
+  <link rel="stylesheet" href="style.css?v=4" />
 </head>
 <body>
   <header class="topbar">
     <a class="brand" href="index.html"><img src="app-icon.png" alt="" /><span>Pamu</span></a>
-    <nav class="nav"><a href="privacy.html">Privacy · Gizlilik</a><a href="terms.html">Terms · Koşullar</a><a href="support.html">Support · Destek</a></nav>
+    <nav class="nav"><a href="privacy.html"><span class="i18n-en">Privacy</span><span class="i18n-tr">Gizlilik</span></a><a href="terms.html"><span class="i18n-en">Terms</span><span class="i18n-tr">Koşullar</span></a><a href="support.html"><span class="i18n-en">Support</span><span class="i18n-tr">Destek</span></a><button class="lang-switch i18n-en" type="button" data-set-lang="tr" lang="tr">Türkçe</button><button class="lang-switch i18n-tr" type="button" data-set-lang="en" lang="en">English</button></nav>
   </header>
   <main class="wrap">
+    <div class="i18n-en" lang="en">
     <h1>Support</h1>
     <p>Write to us at <a href="mailto:appsweatmobile@gmail.com">appsweatmobile@gmail.com</a>. Please do not include personal health details in your email; describe the problem instead. We usually reply within a few days.</p>
     <h2>Common questions</h2>
@@ -29,8 +31,10 @@
     <p>On Today, tap "Ended" at the top right of the card and choose the day. You can also do it from the calendar.</p>
     <h3>Can I hide what reminders say?</h3>
     <p>Yes. Choose private wording in reminder settings so notifications never mention your period.</p>
+    </div>
 
-    <div class="lang" id="tr" lang="tr">
+
+    <div class="lang i18n-tr" id="tr" lang="tr">
       <h1>Destek</h1>
       <p>Bize <a href="mailto:appsweatmobile@gmail.com">appsweatmobile@gmail.com</a> adresinden yazabilirsin. Lütfen e-postana kişisel sağlık bilgilerini ekleme, sorunu anlatman yeterli. Genellikle birkaç gün içinde yanıtlarız.</p>
       <h2>Sık sorulanlar</h2>
@@ -45,6 +49,7 @@
     </div>
   </main>
   <footer>© 2026 AppSweat · <a href="mailto:appsweatmobile@gmail.com">appsweatmobile@gmail.com</a></footer>
-  <script src="store-banner.js?v=3"></script>
+  <script src="store-banner.js?v=4"></script>
+  <script src="lang.js?v=4"></script>
 </body>
 </html>

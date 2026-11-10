@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-title-tr="Kullanım Koşulları · Pamu">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -10,14 +10,16 @@
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;700;800&display=swap" />
   <meta name="apple-itunes-app" content="app-id=6824039129" />
-  <link rel="stylesheet" href="style.css?v=3" />
+  <script>(function(){var l=null;try{l=new URLSearchParams(location.search).get('lang')||localStorage.getItem('pamuLang')}catch(e){}if(location.hash==='#tr')l='tr';if(l!=='tr'&&l!=='en')l=/^tr/i.test(navigator.language||'')?'tr':'en';var h=document.documentElement;h.setAttribute('data-lang',l);h.lang=l})();</script>
+  <link rel="stylesheet" href="style.css?v=4" />
 </head>
 <body>
   <header class="topbar">
     <a class="brand" href="index.html"><img src="app-icon.png" alt="" /><span>Pamu</span></a>
-    <nav class="nav"><a href="privacy.html">Privacy · Gizlilik</a><a href="terms.html">Terms · Koşullar</a><a href="support.html">Support · Destek</a></nav>
+    <nav class="nav"><a href="privacy.html"><span class="i18n-en">Privacy</span><span class="i18n-tr">Gizlilik</span></a><a href="terms.html"><span class="i18n-en">Terms</span><span class="i18n-tr">Koşullar</span></a><a href="support.html"><span class="i18n-en">Support</span><span class="i18n-tr">Destek</span></a><button class="lang-switch i18n-en" type="button" data-set-lang="tr" lang="tr">Türkçe</button><button class="lang-switch i18n-tr" type="button" data-set-lang="en" lang="en">English</button></nav>
   </header>
   <main class="wrap">
+    <div class="i18n-en" lang="en">
     <h1>Terms of Use</h1>
     <div class="updated">Last updated: October 27, 2026</div>
     <p>By using Pamu: Period &amp; Cycle Tracker, made by AppSweat, you agree to these terms.</p>
@@ -34,8 +36,10 @@
     <p>The app is provided "as is". To the extent the law allows, AppSweat is not liable for indirect damages or for decisions made based on the app's estimates.</p>
     <h2>6. Changes and contact</h2>
     <p>We may update these terms and will change the date above when we do. Contact: <a href="mailto:appsweatmobile@gmail.com">appsweatmobile@gmail.com</a>.</p>
+    </div>
 
-    <div class="lang" id="tr" lang="tr">
+
+    <div class="lang i18n-tr" id="tr" lang="tr">
       <h1>Kullanım Koşulları</h1>
       <div class="updated">Son güncelleme: 27 Ekim 2026</div>
       <p>AppSweat tarafından geliştirilen Pamu: Regl ve Döngü Takibi'ni kullanarak bu koşulları kabul edersin.</p>
@@ -55,6 +59,7 @@
     </div>
   </main>
   <footer>© 2026 AppSweat · <a href="mailto:appsweatmobile@gmail.com">appsweatmobile@gmail.com</a></footer>
-  <script src="store-banner.js?v=3"></script>
+  <script src="store-banner.js?v=4"></script>
+  <script src="lang.js?v=4"></script>
 </body>
 </html>
